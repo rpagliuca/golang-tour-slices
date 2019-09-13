@@ -32,12 +32,10 @@ func color(x, y, xMax, yMax int) uint8 {
 		val = 0
 	}
 	if math.Pow(float64(x - xMax/2), 2) + math.Pow(float64(y - yMax/2), 2) > math.Pow(float64(xMax)/2.2 - 1, 2) && math.Pow(float64(x - xMax/2), 2) + math.Pow(float64(y - yMax/2), 2) < math.Pow(float64(xMax)/2.2 + 1, 2)  {
-	//if math.Pow(float64(x - xMax/2), 2) + math.Pow(float64(y - yMax/2), 2) == math.Pow(float64(xMax/3), 2)  {
 		val = uint8((math.Pow(float64(x - xMax/2), 2) + math.Pow(float64(y - yMax/2), 2))/math.Pow(float64(xMax/3), 2) * 255)
 		val = 240
 	}
 	if math.Pow(float64(x - xMax/2), 2) + math.Pow(float64(y - yMax/2), 2) < math.Pow(float64(xMax/3) - 1, 2) {
-		//val = 255
 		val = uint8((math.Pow(float64(x - xMax/2), 2) + math.Pow(float64(y - yMax/2), 2)) / math.Pow(float64(xMax/3) - 1, 2) * 255)
 	}
 	if x == xMax - 1 {
