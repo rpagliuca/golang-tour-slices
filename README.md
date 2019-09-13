@@ -5,6 +5,7 @@ Custom solution for "Exercise: Slices" of "A Tour of Go" (https://tour.golang.or
 # Instructions
 
 `go build .` 
+
 `./golang-tour-slices`
 
 The output will be a base64 encoded image.
